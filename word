@@ -1,0 +1,23 @@
+Αρχιτεκτονική Προηγμένων Υπολογιστών και Επιταχυντών
+Εργαστήριο 2
+Ομάδα 13
+
+Για τα pixels σύνορα της εικόνας (i = 0, i = HEIGHT−1, j = 0, j = WIDTH−1) χρησιμοποιήθηκε η πολιτική C_filt[i][j] = C[i][j].
+Kernel & Compute Units
+Kernel execution
+Kernel	Enqueues	Total Time (ms)	Min Time (ms)	Avg Time (ms)	Max Time
+(ms)
+IMAGE_DIFF_POSTERIZE	1	0.235	0.235	0.235	0.235
+
+Kernel Data Transfers
+Top Kernel Data Transfer
+Compute Unit	Device	Number of Transfers	Avg Bytes per Transfer	Transfer Efficiency (%)	Total Data Transfer (MB)	Total Write (MB)	Total Read (MB)	Total Transfer rate (MB/s)
+IMAGE_DIFF_POSTERIZE_1		192	1024.00	25.000	0.197	0.066	0.131	10014.000
+
+Host Data Transfer
+Host Transfer
+Context: Number of Devices	Transfer Type	Number of Buffer Transfers	Transfer Rate (MB/s)	Avg Bandwidth Utilization (%)	Avg Size (KB)	Total Time (ms)	Avg Time (ms)
+context 0:1	READ	1	3.129	N/A	65.546	N/A	N/A
+context 0:1	WRITE	1	2.354	N.A	131.072	N/A	N/A
+
+
