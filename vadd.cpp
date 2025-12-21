@@ -44,7 +44,7 @@ void IMAGE_DIFF_POSTERIZE(int *in1, // Input Image A
 // global memory simultaneously, user can create multiple master interfaces and
 // can connect to different arguments.
 #pragma HLS INTERFACE m_axi port = in1 offset = slave bundle = gmem
-#pragma HLS INTERFACE m_axi port = in2 offset = slave bundle = gmem1
+#pragma HLS INTERFACE m_axi port = in2 offset = slave bundle = gmem
 #pragma HLS INTERFACE m_axi port = out_r offset = slave bundle = gmem
 
 #pragma HLS INTERFACE s_axilite port = in1 bundle = control
